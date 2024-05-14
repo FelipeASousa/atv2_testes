@@ -5,4 +5,5 @@
  * 
  */
 module Triangulos {
+	requires junit;
 }

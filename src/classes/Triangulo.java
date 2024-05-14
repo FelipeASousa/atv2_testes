@@ -42,17 +42,17 @@ public class Triangulo {
 	}
 
 
-	public String tipo_triangulo() {
+	public String tipo_triangulo(Triangulo triangulo) {
 		String resultado;
 		if (((this.lado1 + this.lado2) > this.lado3) && ((this.lado1 + this.lado3) > this.lado2)  && ((this.lado2 + this.lado3) > this.lado1)) {
 		if(this.lado1 == this.lado2 && this.lado2 == this.lado3 && this.lado1 == this.lado3) {
-			resultado = "É equilátero";
+			resultado = "Equilatero";
 		}
 		else if ((this.lado1 == this.lado2 && this.lado1 != this.lado3) || (this.lado2 == this.lado3 && this.lado3 != this.lado1) || (this.lado1 == this.lado3 && this.lado3 != this.lado2)) {
-			resultado = "É isóceles";
+			resultado = "Isoceles";
 		}
 		else {
-			resultado = "É escaleno";
+			resultado = "Escaleno";
 		}
 		return resultado;
 	}
